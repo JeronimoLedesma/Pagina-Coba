@@ -52,7 +52,7 @@ void loop() {
       case 3994140416:
       Serial.println("Presionaste el boton: 2");
       break;       
-	  case 3977428736:
+	    case 3977428736:
       Serial.println("Presionaste el boton: 3");
       break;      
       case 3944005376:
