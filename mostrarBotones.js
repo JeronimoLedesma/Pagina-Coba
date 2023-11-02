@@ -73,3 +73,13 @@ function manejarCodigoRecibido(codigo) {
         botonPresionado.textContent = "Mensaje vacío o no válido";
     }
 }
+
+
+function agregarEntradaHistorial(fecha, boton) {
+    const historial = document.getElementById("historial");
+    const fila = historial.insertRow();
+    const celdaFecha = fila.insertCell(0);
+    const celdaBoton = fila.insertCell(1);
+    celdaFecha.innerHTML = fecha;
+    celdaBoton.innerHTML = boton;
+}
