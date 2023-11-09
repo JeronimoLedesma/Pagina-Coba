@@ -69,13 +69,16 @@ function manejarCodigoRecibido(codigo) {
                 botonPresionado.textContent = "Código no reconocido";
                 break;
         }
+
+        const fecha = new Date().toLocaleString();
+        agregarAlHistorial(fecha,botonPresionado.textContent);
     } else {
         botonPresionado.textContent = "Mensaje vacío o no válido";
     }
 }
 
 
-function agregarEntradaHistorial(fecha, boton) {
+function agregarAlHistorial(fecha, boton) {
     const historial = document.getElementById("historial");
     const fila = historial.insertRow();
     const celdaFecha = fila.insertCell(0);
